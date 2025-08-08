@@ -559,46 +559,26 @@ section{
 }
 
 
-
-.walk_animation{
-  animation: walk_animation 10s linear infinite;
-  -webkit-animation: walk_animation 10s linear infinite;
-}
-
-@keyframes walk_animation {
-  0% {
-    left: 0px;
-    transform: translateY(0%) scaleX(-1);
-    -webkit-transform: translateY(0%) scaleX(-1);
-    -moz-transform: translateY(0%) scaleX(-1);
-    -ms-transform: translateY(0%) scaleX(-1);
-    -o-transform: translateY(0%) scaleX(-1);
-}
-  50% {
-    left: calc(50% - 0px);
-    transform: translateY(0%) scaleX(-1);
-    -webkit-transform: translateY(0%) scaleX(-1);
-    -moz-transform: translateY(0%) scaleX(-1);
-    -ms-transform: translateY(0%) scaleX(-1);
-    -o-transform: translateY(0%) scaleX(-1);
-}
-  50.01% {
-    transform: translateY(0%) scaleX(1);
-    -webkit-transform: translateY(0%) scaleX(1);
-    -moz-transform: translateY(0%) scaleX(1);
-    -ms-transform: translateY(0%) scaleX(1);
-    -o-transform: translateY(0%) scaleX(1);
-}
-  100% {
-    left: 0px;
-    transform: translateY(0%) scaleX(1);
-    -webkit-transform: translateY(0%) scaleX(1);
-    -moz-transform: translateY(0%) scaleX(1);
-    -ms-transform: translateY(0%) scaleX(1);
-    -o-transform: translateY(0%) scaleX(1);
-}
-}
  
+
+.paper-animation { 
+  animation: paperAnimation 5s ease-in-out infinite;  
+  transform-origin: center top;
+}
+
+@keyframes paperAnimation {
+  0% {
+    transform: translateY(0) rotateX(0deg) rotateZ(0deg);
+  }
+  40% {
+    transform: translateY(-15px) rotateX(-20deg) rotateZ(-5deg);
+  } 
+  100% {
+    transform: translateY(0) rotateX(0deg) rotateZ(0deg);
+  }
+}
+
+
 
 .topElementLoad,
 .topAccess{

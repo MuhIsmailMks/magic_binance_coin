@@ -1,3 +1,9 @@
+window.addEventListener('DOMContentLoaded',() => {
+    AOS.init({
+    once: true
+    }); 
+})
+
 // menu-button
 const menuButton = document.querySelector('.menu-button');
 const menuContainer = document.querySelector('.navbar nav');
@@ -26,6 +32,7 @@ const changeFaceBtn = document.getElementById('changeFaceBtn');
 // Array gambar
 const images = [
   './assets/images/smilingsmirk.jpeg', 
+  './assets/images/$SMIRKMAINIMAGE.png', 
   './assets/images/smirk7.jpeg',
   './assets/images/smirk6.jpeg',
   './assets/images/smirk8.jpeg',
@@ -131,14 +138,4 @@ slideContainers.forEach(container => {
     item.style.animationDelay = `${delay}s`;
   });
 });
-
-
-// start web animation
-function startWeb() {
-  // AOS.init({
-  //   once: true
-  //   }); 
-  // heroImg.classList.add('active')
-}
-
-setTimeout(startWeb, 2000);
+ 
