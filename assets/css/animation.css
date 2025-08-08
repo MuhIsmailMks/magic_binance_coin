@@ -1,0 +1,137 @@
+.heroImg.active .arrowAnimation2 {
+  animation: arrowAnimation 8s ease-out infinite;
+  -webkit-animation: arrowAnimation 8s ease-out infinite;
+}
+
+@keyframes arrowAnimation {
+  0%,
+  100% {
+    top: 100%;
+  }
+  10%,
+  90% {
+    top: 0;
+  }
+}
+
+.heroImg.active .mainImage2 img {
+  animation: arrowAnimation 4s ease-out infinite;
+  -webkit-animation: arrowAnimation 4s ease-out infinite;
+}
+
+/* Container styling */
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+  height: 30px;
+  margin: 0 auto;
+}
+
+/* Bar styling */
+.bar {
+  width: 7%;
+  height: 0.6vw;
+  background-color: #444;
+  opacity: 0.3;
+  animation: blink 1s infinite ease-in-out;
+}
+
+@keyframes blink {
+  0%,
+  50%,
+  100% {
+    opacity: 0.3;
+  }
+  25% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bar {
+    width: 30px;
+    height: 6px;
+  }
+}
+ 
+/* text slider */
+.slide-container {
+  width: 150%;
+  height: auto;
+  overflow: hidden;
+  background: white;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 2526px;
+  margin: auto;
+  height: 50px;
+  position: relative;
+}
+
+.item {
+  width: 300px;
+  height: 100%;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  position: absolute;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide-container .item{
+  animation: scrollLeft 30s linear infinite;
+  -webkit-animation: scrollLeft 30s linear infinite;
+  left: calc(300px * 10);
+}
+
+.slide-container.rightSlider .item{
+  animation: scrollRight 30s linear infinite;
+  -webkit-animation: scrollRight 30s linear infinite;
+  left: -300px; 
+}
+
+.item h4 {
+  font-size: 51px;
+  text-transform: uppercase;
+  animation: text_animation 1s ease-in-out infinite;
+
+  color: white;
+  -webkit-text-stroke: 1.5px black;
+}
+
+.item:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+ 
+@keyframes scrollLeft {
+  to {
+    left: -300px;
+  }
+}
+
+@keyframes scrollRight {
+  to {
+      left: calc(300px * 10);
+  }
+}
