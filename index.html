@@ -251,7 +251,7 @@
             data-aos-delay="300"
             >Power. Without saying a word.</span>
         
-          <div class="image-container w-full lg:w-[50%]">
+          <div class="image-container w-[60%] lg:w-[50%] max-w-[1300px]">
             <img src="./assets/images/smilingsmirk.jpeg" alt="3D Effect" class="border-black border-2 w-full">
           </div>
 
@@ -348,6 +348,9 @@
             Get Ready for Launch
           </h2>
         </div>
+
+        
+        <canvas id="canvas" width="800" height="400" class="absolute w-full h-[400px] left-0 top-[-10%]  "></canvas>
 
         <div class="launch-section">
           <h2 class="loved-font text-center text-[30px] xl:text-[3vw]"> Launch Countdown</h2>
@@ -574,23 +577,23 @@ you’re probably holding the wrong coin.
       </section>
 
 
-      <!-- <footer class="w-full relative h-[500px]">
-          <div class="text">
-        software developer with over 9 years of experience, I have developed a
-        strong foundation in crafting innovative and efficient technology
-        solutions.
-      </div>
+      <footer  class="w-full flex_center relative h-[500px]">
+           <div id="headerEffectCanvas" class="scene flex w-full h-full"></div>
+           
       </footer>
-  -->
+ 
 
     </main>
- 
-    <script src="https://cdn.jsdelivr.net/npm/matter-js"></script>
+  
+    <!-- matter js -->
+    <script src="https://cdn.jsdelivr.net/npm/matter-js/build/matter.min.js"></script>
+
 
     <!-- aos js library animation -->
     <script src="../cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
     <script src="./assets/js/index.js"></script>
-    <script src="./assets/js/animation.js"></script>
+    <script src="./assets/js/animation.js"></script> 
  
   </body>
  

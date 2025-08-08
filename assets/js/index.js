@@ -25,11 +25,11 @@ const changeFaceBtn = document.getElementById('changeFaceBtn');
 
 // Array gambar
 const images = [
-  './assets/images/smilingsmirk.jpeg',
-  './assets/images/smirk5.jpeg',
+  './assets/images/smilingsmirk.jpeg', 
   './assets/images/smirk7.jpeg',
   './assets/images/smirk6.jpeg',
   './assets/images/smirk8.jpeg',
+  './assets/images/smirk1.jpeg',  
   './assets/images/smirk11.jpeg'
 ];
 

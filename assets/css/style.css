@@ -676,9 +676,14 @@ section{
   #cursor.overlay .cursor__circle{
     width: 48px;
     height: 48px;
+    color: #9c9c9c;
     background-color: rgba(227, 222, 193, 0.08);
     border-color: transparent;
   }
 }
 
 
+
+canvas {
+  max-width: 100%;
+}
