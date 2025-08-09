@@ -8,6 +8,9 @@ loadingVideo.addEventListener('ended', () => {
 
   AOS.init({ once: true });
 });
+
+
+  // AOS.init({ once: true });
  
  
 // menu-button
@@ -142,5 +145,26 @@ slideContainers.forEach(container => {
   items.forEach((item, i) => {
     const delay = (animationDuration / totalItems) * (totalItems - i) * -1;
     item.style.animationDelay = `${delay}s`;
+  });
+});
+
+
+// dropdown btn
+// JavaScript
+const dropdowns = document.querySelectorAll(".dropdown");
+
+dropdowns.forEach(dropdown => {
+  const btn = dropdown.querySelector(".btn");
+
+  btn.addEventListener("click", () => {
+    // Tutup semua dropdown lain
+    dropdowns.forEach(d => {
+      if (d !== dropdown) {
+        d.classList.remove("active");
+      }
+    });
+
+    // Toggle dropdown yang diklik
+    dropdown.classList.toggle("active");
   });
 });

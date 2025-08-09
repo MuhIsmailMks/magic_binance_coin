@@ -116,6 +116,10 @@
   -webkit-text-stroke: 1.5px black;
 }
 
+.slide-container.footer_slide h4{
+  color: black;
+}
+
 .item:hover {
   transform: scale(1.1);
   -webkit-transform: scale(1.1);
@@ -161,4 +165,13 @@
   70%  { transform: rotate(1deg);  }
   90%  { transform: rotate(-1deg); }
   100% { transform: rotate(0deg); }
+}
+
+/* social hover */
+.social-btn{
+  transition: .3s ease-in-out;
+}
+
+.social-btn:hover{
+  transform: rotate(15deg) scale(1.1);
 }

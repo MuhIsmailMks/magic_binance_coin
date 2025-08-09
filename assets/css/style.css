@@ -39,8 +39,14 @@ li{
   src: url("../fonts/AvenirNextLTPro-Bold.otf") format("truetype"); 
 }
 
+@font-face {
+  font-family: "hendrawan";
+  src: url("../fonts/DeliciousHandrawn-Regular.ttf") format("truetype"); 
+}
+
 body {
-  font-family: "ComicSansMS3", sans-serif; 
+  font-family: "hendrawan", sans-serif; 
+  /* font-family: "ComicSansMS3", sans-serif;  */
 }
  
 .loved-font{
@@ -128,6 +134,12 @@ html {
   transform: scale(1.2); 
 }
 
+.navbar-link{
+  background-image: url('../images/bgNav2.svg');
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
 
 .navbar nav.active{
   border-radius: 20px;
@@ -142,17 +154,49 @@ html {
   -o-transition: border-radius .4s ease;
 }
 
+.nav-buy-btn::before{
+  content: "";
+    background-color: white;
+        border: 1px solid black;
+    box-sizing: border-box;
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    -webkit-transform: perspective(98px) rotateY(2deg) rotateX(-2deg) rotate(5deg) translateX(6px) scale(1.05);
+    transform: perspective(98px) rotateY(2deg) rotateX(-2deg) rotate(5deg) translateX(6px) scale(1.05);
+    width: 100%;
+    transition: all .3s ease-in-out;
+    z-index: -1;
+}
+
+
+.nav-buy-btn:hover:before {
+    transition: all .3s ease-in-out;
+    -webkit-transform: perspective(40px) rotateY(2deg) rotateX(-2deg) rotate(5deg) translateX(6px) scale(1.05);
+    transform: perspective(40px) rotateY(2deg) rotateX(-2deg) rotate(5deg) translateX(6px) scale(1.05);
+}
+ 
 .navbar nav.active .logoImage{
   opacity: 0;
 }
 
-.menuContainer{
-  margin-top: -1rem;
+
+.menuContainer{ 
   transition: .3s;
   -webkit-transition: .3s;
   -moz-transition: .3s;
   -ms-transition: .3s;
   -o-transition: .3s;
+ 
+  height: 0px !important;
+
+  border:2px solid black;
+
+  -webkit-transform: perspective(470px) rotateY(-1deg) rotateX(12deg) rotate(-5deg) translateX(0) translateY(0) scale(1);
+  transform: perspective(470px) rotateY(-1deg) rotateX(12deg) rotate(-5deg) translateX(0) translateY(0) scale(1);
 }
 
 .menuContainer .logoLeft{
@@ -168,12 +212,10 @@ html {
   opacity: 1;
 }
 
-.menuContainer.active{
-  height: 360px;
+.menuContainer.active{ 
   margin-top: 1rem;
+  height: auto !important;
 }
-
-/* menu */
 
 /* menu button */
 .menu {
@@ -181,45 +223,25 @@ html {
 }
 
 .menu-button { 
-  overflow: hidden;
-  position: relative;
-  align-items: center;
+  overflow: hidden; 
+  position: relative; 
+
+  -webkit-transform: perspective(20px) rotateY(-1deg) rotateX(-2deg) rotate(3deg) translateX(0) translateY(0) scale(1);
+  transform: perspective(20px) rotateY(-1deg) rotateX(-2deg) rotate(3deg) translateX(0) translateY(0) scale(1);
 }
 
 .menu-button span {
-  width: 60%;
+  width: 30%;
   height: 3px;
   background-color: #ffffff;
-  position: absolute;
-  transition: all 0.3s ease-in-out;
-}
-
-.menu-button span:nth-child(1) {
-  top: .9rem;
-}
-
-.menu-button span:nth-child(2) {
   position: relative;
-}
-
-.menu-button span:nth-child(3) {
-  bottom: .9rem;
-}
-
-.menu-button.active span:nth-child(1) {
-  transform: rotate(45deg);
-  top: 1.5rem;
-}
-
-.menu-button.active span:nth-child(2) {
-  width: 0%;
-}
-
+  transition: all 0.3s ease-in-out;
+} 
+.menu-button.active span:nth-child(1),
 .menu-button.active span:nth-child(3) {
-  transform: rotate(-45deg);
-  bottom: 1.5rem;
+  opacity: 0;
 }
-
+ 
 .buttonStyling{ 
   transition: .2s ease-in;
   -webkit-transition: .2s ease-in;
@@ -395,26 +417,21 @@ section{
 
 }
 
+/* how to make sure */
+.dropdown .content {
+  height: 0px !important;
+  overflow: hidden;
+}
 
-/* footer */
-      /* .word {
-        position: absolute;
-        cursor: grab;
-        font-size: 30px;
-        color: #ffeb3b;
-      }
-      .word.highlighted {
-        font-weight: bold;
-        color: black;
-      }
+.dropdown.active .content {
+  height: auto !important;
+  padding: 2rem;
+}
 
-      a {
-        text-decoration: none;
-        color: black;
-        display: block;
-        padding: 1rem;
-      } */
-
+.dropdown.active img{
+  transform: rotate(180deg);
+}
+ 
 @media screen and (max-width:768px) {
   .buttonStyling{
     width: 45%;
@@ -423,39 +440,18 @@ section{
     text-align: center;
     padding: .8rem 0;
   }
- 
-  .menu-button span {
-    width: 50%;
-    height: 3px; 
-  }
 
-  .menu-button span:nth-child(1) {
-    top: 1rem;
-  }
-
-  .menu-button span:nth-child(3) {
-    bottom: 1rem;
-  }
-
-  
-  .menu-button.active span:nth-child(1) { 
-    top: 1.6rem;
-  }
-  
-
-  .menu-button.active span:nth-child(3) { 
-    bottom: 1.4rem;
-  }
 
   .menuContainer{
     opacity: 0;
     z-index: -1; 
   }
+
   .menuContainer.active{
     opacity: 1;
-    height: 490px; 
+    height: auto; 
     z-index: 1;
-    padding-top: 2rem;
+    padding: 2rem;
   }
 
   .socialNavIcon path{
@@ -592,16 +588,7 @@ section{
 }
 
 
-
-.topElementLoad,
-.topAccess{
-  background-image: url('../images/paper1.webp');
-  background-position: center;
-  background-size: cover;
-  background-repeat: repeat; 
-  background-color: black;
-}
-
+  
 /* background */
 .bgContract{
   background-image: url('../images/contractBg.png');

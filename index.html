@@ -44,7 +44,7 @@
     
     <!-- container page -->
     <main
-      class="w-full min-h-[100vh] h-auto max-w-[100%] relative overflow-hidden flex flex-col items-center gap-[50px] md:gap-[70px]"
+      class="w-full min-h-[100vh] h-auto max-w-[100%] relative overflow-hidden flex flex-col items-center gap-[70px] md:gap-[100px]"
     >
      <div id="cursor" class="z-[9999]">
       <div class="cursor__circle"></div>
@@ -73,13 +73,13 @@
 
     <!-- navbar -->
       <div
-        class="navbar w-full h-auto fixed top-0 left-0 flex_center z-[999]"
+        class="navbar w-full h-auto fixed top-[20px] left-0 flex_center z-[999]"
         data-aos="fade-down"
         data-aos-duration="900"
         data-aos-delay="100"
       >
         <nav
-          class="w-full h-auto bg-[#fafafa] border-black border-b-[.2vw] flex_center lg:py-[.55vw] max-w-[3000px] flex-wrap ease-in max-md:py-2 py-5"
+          class="w-full h-auto flex_center lg:py-[.55vw] max-w-[3000px] flex-wrap ease-in max-md:py-2 py-5 max-lg:px-4"
         >
           <div
             class="left w-[50%] flex items-center justify-start pl-[2vw] gap-2"
@@ -95,159 +95,72 @@
           </div>
 
           <div
-            class="link absolute h-full w-auto flex_center gap-6 max-lg:hidden duration-500 max-h-[80px]"
+            class="link navbar-link absolute  p-10  flex_center gap-6 max-lg:hidden duration-500"
           >
 
           <li>
-            <a href="#home" class="text-[20px]">Home</a>
+            <a href="#home" class="text-[22px] xl:text-[28px] hover:underline">Home</a>
           </li>
 
           <li>
-            <a href="#howtobuy" class="text-[20px]">How To Buy</a>
+            <a href="#howtobuy" class="text-[22px] xl:text-[28px] hover:underline">How To Buy</a>
           </li>
 
           <li>
-            <a href="#smirknomics" class="text-[20px]">Smirknomics</a>
+            <a href="#smirknomics" class="text-[22px] xl:text-[28px] hover:underline">Smirknomics</a>
           </li>
 
           <li>
-            <a href="#roadmap" class="text-[20px]">Roadmap</a>
+            <a href="#roadmap" class="text-[22px] xl:text-[28px] hover:underline">Roadmap</a>
           </li>
  
              
           </div>
 
+           <a href="#" class="nav-buy-btn absolute flex justify-center items-center lg:hidden w-[110px] h-[50px] text-[17px] font-medium">BUY SMIRK</a>
+
           <div
             class="right flex justify-end items-center gap-6 w-[50%] pr-[2vw]"
-          >
-            <div class="social gap-[1vw] hidden md:flex flex_center">
-              <a
-                href="https://t.me/org"
-                target="_blank"
-                class="socialNav duration-200 hover:scale-110"
-              >
-                <img src="static/images/telegram.svg" alt="" />
-              </a>
-              <a
-                href="https://x.com/"
-                target="_blank"
-                class="socialNav duration-200 hover:scale-110"
-              >
-                <img src="static/images/twitterLogo.svg" alt="" />
-              </a>
-              <a
-                href="https://www.dextools.io/app"
-                class="socialNav duration-200 hover:scale-110"
-              >
-                <img src="static/images/dextools.svg" alt="" class="dexImg" />
-              </a>
-            </div>
+          > 
 
-            <div class="btns flex_center gap-2 lg:gap-5">
+          <!-- social -->
+            <div class="btns socials flex_center  gap-3">
  
-              <a href="https://x.com/SmirkMeme" target="_blank" class="social max-lg:hidden">
-                <img src="./assets/images/twitterLogo.svg" alt="twtter" class="w-10">
+              <a href="https://x.com/SmirkMeme" target="_blank" class="social social-btn max-lg:hidden bg-white border-black border-[1px] rounded-full p-3">
+                <img src="./assets/images/twitterLogo.svg" alt="twtter" class="w-6">
               </a>
 
-              <a href="https://t.me/SmirkSolMeme" target="_blank" class="social max-lg:hidden">
-                <img src="./assets/images/telegram.svg" alt="telegram" class="w-10">
+              <a href="https://t.me/SmirkSolMeme" target="_blank" class="social social-btn max-lg:hidden bg-white border-black border-[1px] rounded-full p-3">
+                <img src="./assets/images/telegram.svg" alt="telegram" class="w-6">
               </a>
 
-              <div
-                class="menu-button bg-black h-[50px] w-[50px] flex_center rounded-full cursor-pointer lg:hidden"
-              >
+ 
+            </div>
+            
+            <a href="#" class="nav-buy-btn relative flex justify-center items-center max-lg:hidden w-[130px] h-[60px] text-[22px] font-medium">BUY SMIRK</a>
+
+            <div class="menu-button bg-black h-[60px] w-[70px]  flex_center flex-col cursor-pointer lg:hidden gap-1">
                 <span></span>
                 <span></span>
                 <span></span>
               </div>
-            </div>
+
           </div>
 
           <div
-            class="menuContainer relative w-[97%] lg:w-[99%] bg-[#fafafa] h-[0px] rounded-[20px] flex_center flex-col gap-[30px] lg:gap-[40px] overflow-hidden max-lg:justify-start lg:hidden"
+            class="menuContainer absolute top-[100%] w-[90%] md:w-[60%] bg-[#fafafa]  flex_center flex-col gap-[20px]  overflow-hidden lg:hidden leading-[1] text-[20px] lg:text-[35px] text-black"
           >
-            <a
-              href="#home"
-              class="socialLink leading-[1] text-[20px] lg:text-[35px] text-black"
-              >Home</a
-            >
-            <a
-              href="#howtobuy"
-              class="socialLink leading-[1] text-[20px] lg:text-[35px] text-black"
-              >How To Buy </a
-            >
-            <a
-              href="#smirknomics"
-              class="socialLink leading-[1] text-[20px] lg:text-[35px] text-black"
-              >Smirknomics</a
-            >
-            <a
-              href="#roadmap"
-              class="socialLink leading-[1] text-[20px] lg:text-[35px] text-black"
-              >Roadmap</a
-            >
-
-            <div class="social mt-4 gap-9 lg:gap-[3vw] flex flex_center">
-              <a
-                href="https://t.me/SmirkSolMeme"
-                target="_blank"
-                class="socialNav duration-200 hover:scale-110 black-icon-svg"
-              >
-                <svg
-                  class="socialNavIcon"
-                  width="32"
-                  height="28"
-                  viewBox="0 0 32 28"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M12.0384 26.306L12.5355 18.4748L26.171 5.6634C26.7747 5.08947 26.0467 4.81177 25.2478 5.31164L8.41648 16.4013L1.13713 13.9945C-0.425272 13.5317 -0.443027 12.4023 1.49222 11.5877L29.8462 0.183376C31.1423 -0.427572 32.3851 0.516621 31.888 2.59014L27.0587 26.306C26.7214 27.9908 25.7449 28.3981 24.3956 27.6205L17.0452 21.9553L13.512 25.5285C13.1037 25.9543 12.7663 26.306 12.0384 26.306Z"
-                    fill="black"
-                  />
-                </svg>
-              </a>
-              <a
-                href="https://x.com/SmirkMeme"
-                target="_blank"
-                class="socialNav duration-200 hover:scale-110 black-icon-svg"
-              >
-                <svg
-                  class="socialNavIcon"
-                  width="40"
-                  height="32"
-                  viewBox="0 0 40 32"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g clip-path="url(#clip0_491_24)">
-                    <path
-                      d="M39.1981 3.89677C37.7304 4.54708 36.1736 4.97389 34.5794 5.16299C36.2399 4.16778 37.5148 2.59181 38.1152 0.714072C36.5367 1.65073 34.8097 2.3107 33.0088 2.66546C31.5419 1.10267 29.4521 0.125977 27.139 0.125977C22.6979 0.125977 19.0972 3.72651 19.0972 8.16732C19.0972 8.79767 19.1684 9.41133 19.3055 10C12.6222 9.66458 6.69684 6.4632 2.73053 1.59798C2.03847 2.78565 1.64191 4.16716 1.64191 5.64069C1.64191 8.43067 3.0617 10.8919 5.21933 12.3341C3.9423 12.2941 2.69337 11.9492 1.57684 11.3281C1.57643 11.3618 1.57628 11.3955 1.57638 11.4293C1.57638 15.3255 4.34829 18.5757 8.02691 19.3145C6.84273 19.6365 5.60062 19.6836 4.39545 19.4523C5.41868 22.6471 8.38856 24.9719 11.9073 25.037C9.15518 27.1937 5.68769 28.4794 1.92027 28.4794C1.27108 28.4794 0.631082 28.4412 0.00195312 28.367C3.56069 30.6486 7.7876 31.9799 12.3288 31.9799C27.1203 31.9799 35.2087 19.7264 35.2087 9.09991C35.2087 8.75112 35.2009 8.40433 35.1854 8.05953C36.7596 6.92131 38.1184 5.51169 39.1981 3.89677Z"
-                      fill="black"
-                    />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_491_24">
-                      <rect width="39.2" height="32" fill="white" />
-                    </clipPath>
-                  </defs>
-                </svg>
-              </a> 
-            </div>
-
-            <div
-              class="logoImgRight relative w-[40%] sm:w-[20%] h-auto bottom-0 lg:w-[20%] lg:right-0 duration-300 float_animation"
-              style="animation-duration: 7s;"
-            >
-              <img
-                src="./assets/images/smilingsmirk.jpeg"
-                alt="logo"
-                class="w-full h-auto object-contain rounded-full"
-                style="transform: scaleX(-1);"
-              />
-            </div>
+            <a href="#home" class="socialLink ">Home</a>
+            <a href="#howtobuy" class="socialLink">How To Buy </a>
+            <a href="#smirknomics" class="socialLink">Smirknomics</a>
+            <a href="#roadmap" class="socialLink">Roadmap</a>
+  
+              <a target="_blank" href="https://x.com/SmirkMeme" class="socialLink">Twitter</a>
+              <a target="_blank" href="https://t.me/SmirkSolMeme" class="socialLink">telegram</a> 
+ 
  
           </div>
+
         </nav>
       </div>
 
@@ -264,7 +177,7 @@
             data-aos-delay="300"
             >Power. Without saying a word.</span>
         
-          <div class="image-container w-[70%] lg:w-[50%] max-w-[1300px]">
+          <div class="image-container w-[55%] lg:w-[50%] max-w-[1300px]">
             <img src="./assets/images/smilingsmirk.jpeg" alt="3D Effect" class="border-black border-2 w-full">
           </div>
 
@@ -275,7 +188,7 @@
          
         </div>
 
-        <div class="text-slider-container absolute z-0 w-full h-full left-0 top-0">
+        <div class="text-slider-container absolute z-0 w-full h-full left-0 top-0 avenir_font">
           <div class="slide-container left-[-35%] lg:left-[-20%] absolute top-[55%] lg:top-[55%] py-3 lg:py-5 z-10 rotate-[45deg] lg:rotate-[20deg]">
             <div class="wrapper">
                 <div class="item item1">
@@ -355,7 +268,7 @@
           class="avenir_font relative w-auto h-auto py-[40px] lg:py-[60px] px-[30px] lg:px-[5vw] pt-[3vw] lg:pt-[1vw]"
         >
           <h2
-            class="mediumStroke text-white text-[15vw] lg:text-[6vw] boldShadow text-center leading-[1]" 
+            class="mediumStroke text-white text-[10vw] lg:text-[6vw] boldShadow text-center leading-[1]" 
           data-aos="fade-up"
           data-aos-duration="900"
           data-aos-delay="100"
@@ -423,7 +336,7 @@
           data-aos-delay="100"
         >
           <h2
-            class="mediumStroke text-white text-[16vw] lg:text-[7vw] boldShadow text-center leading-[1]"
+            class="mediumStroke text-white text-[10vw] lg:text-[7vw] boldShadow text-center leading-[1]"
           >
             How to buy
           </h2>
@@ -465,7 +378,7 @@
              <div class="absolute w-full h-full  text-black">
               <h3 class="step absolute avenir_font left-[12%] top-[15%] md:top-[18%] rotate-[-20deg] text-[30px] font-semibold">STEP 1</h3>
 
-              <p class="absolute w-[70%] right-[10%] text-[15px] md:text-[18px] leading-[1.9] top-[35%]">
+              <p class="absolute w-[70%] right-[10%] text-[19px] md:text-[22px] leading-[1.9] top-[35%]">
                 Download a trusted wallet like MetaMask or Trust Wallet on your phone or browser. Set it up, secure your seed phrase, and make sure you’re on the right network.
               </p>
              </div>
@@ -484,7 +397,7 @@
              <div class="absolute w-full h-full  text-black">
               <h3 class="step absolute avenir_font left-[12%] top-[15%] md:top-[18%] rotate-[-20deg] text-[30px] font-semibold">STEP 2</h3>
 
-              <p class="absolute w-[70%] right-[10%] text-[15px] md:text-[18px] leading-[1.5] top-[35%]">
+              <p class="absolute w-[70%] right-[10%] text-[19px] md:text-[22px] leading-[1.5] top-[35%]">
                Use your wallet’s built-in buy feature or an exchange like Binance or Coinbase to purchase BNB (for BSC network) or ETH (for Ethereum network). Then, transfer it to your wallet.
               </p>
              </div>
@@ -503,7 +416,7 @@
              <div class="absolute w-full h-full  text-black">
               <h3 class="step absolute avenir_font left-[12%] top-[15%] md:top-[18%] rotate-[-20deg] text-[30px] font-semibold">STEP 3</h3>
 
-              <p class="absolute w-[70%] right-[10%] text-[15px] md:text-[18px] leading-[1.9] top-[35%]">
+              <p class="absolute w-[70%] right-[10%] text-[19px] md:text-[22px] leading-[1.9] top-[35%]">
                  Go to PancakeSwap (for BSC) or Uniswap (for Ethereum), connect your wallet, and paste the official $SMIRK contract address. 
               </p>
              </div>
@@ -517,8 +430,9 @@
 
       <section
         id="smirknomics"
-        class="smirknomics max-lg:mt-[50px] mt-[10vw] flex_center flex-col"
+        class="smirknomics flex_center flex-col"
       >
+
         <div
           class="avenir_font relative w-auto h-auto py-[40px] lg:py-[60px] px-[30px] lg:px-[5vw] pt-[3vw] lg:pt-[1vw]"
           data-aos="fade-up"
@@ -531,47 +445,47 @@
             Smirknomics 
           </h2>
         </div>
- 
-         <div class="token-container paper-animation relative w-full lg:w-[60%] max-w-[900px] flex_center">
-          <div class="bg w-full relative">
-            <img src="./assets/images/token-paper.svg" alt="tokenpaper" class="w-full h-auto">
+
+        <div class="token-container w-[90%] xl:w-[70%] h-auto max-xl:py-10 xl:h-[500px] rounded-[80px] border-black border-b-4 border-l-4 border-t border-r-2 bg-white flex_center flex-wrap">
+          <div class="image flex_center h-full w-full lg:w-[50%] ">
+            <img src="./assets/images/token-image.jpg" alt="token" class="w-[70%] h-auto rounded-[20px]">
           </div>
+          <div class="content flex flex-col justify-center h-full w-full lg:w-[50%] max-lg:px-5">
+            <h3 class="mb-4 text-[50px] max-lg:text-center">Supply Breakdown</h3>
 
-          <div class="content absolute left-[5%] md:left-[3.5%] w-[83%] md:w-[88%] h-[70%] top-[16%] rotate-[2deg] flex_center gap-3 md:gap-6 flex-col text-[16px] md:text-[20px] xl:text-[30px] p4">
-            <h2 class="text-[30px] xl:text-[40px]" data-aos="zoom-in"
-            data-aos-duration="900"
-            data-aos-delay="400">Launching on <a href="https://pump.fun/board" class="text-blue-400 duration-150 hover:underline">Pump.fun</a></h2>
-
-            <div class="supply w-full flex_center gap-4 md:gap-10 ">
-              <p data-aos="zoom-in"
-            data-aos-duration="900"
-            data-aos-delay="400"><span class="font-semibold">5%</span> supply to dev</p>
-              <p data-aos="zoom-in"
-            data-aos-duration="900"
-            data-aos-delay="500"><span class="font-semibold">10%</span> supply for meme contest</p>
+            <div class="flex flex-col gap-3 text-[20px]">
+              <p class="">Token supply: 999 999 999</p>
+              <div class="flex items-center gap-2">
+                <span class="w-4 aspect-square rounded-full bg-black"></span>
+                <p>5% supply to dev</p>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="w-4 aspect-square rounded-full bg-black"></span>
+                <p>10% supply for meme contest</p>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="w-4 aspect-square rounded-full bg-black"></span>
+                <p>Liquidity locked</p>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="w-4 aspect-square rounded-full bg-black"></span>
+                <p>Community-owned</p>
+              </div>
             </div>
 
-            <div class="supply w-full flex_center gap-4 md:gap-10">
-              <p data-aos="zoom-in"
-            data-aos-duration="900"
-            data-aos-delay="400">Liquidity locked</p>
-              <p data-aos="zoom-in"
-            data-aos-duration="900"
-            data-aos-delay="500">Community-owned</p>
-            </div>
+            <div class="w-[90%] h-[1px] my-3 bg-black"></div>
 
-            <p class="text-center w-full" data-aos="zoom-in"
-            data-aos-duration="900"
-            data-aos-delay="600">Renounced contract and fair distribution puts ownership in your hands.</p>
+            <p class="text-[20px]">Renounced contract and fair distribution puts ownership in your hands.</p>
 
           </div>
-          
-        </div>  
+        </div>
+  
+        
       </section>
 
       <section
         id="roadmap"
-        class="roadmap max-lg:mt-[50px] mt-[10vw] flex_center flex-col"
+        class="roadmap flex_center flex-col"
       >
         <div
           class="avenir_font relative w-auto h-auto py-[40px] lg:py-[60px] px-[30px] lg:px-[5vw] pt-[3vw] lg:pt-[1vw]"
@@ -580,13 +494,13 @@
           data-aos-delay="100"
         >
           <h2
-            class="mediumStroke text-white text-[12vw] lg:text-[100px] boldShadow text-center leading-[1]"
+            class="mediumStroke text-white text-[10vw] lg:text-[100px] boldShadow text-center leading-[1]"
           >
              funny + anti-roadmap approach 
           </h2>
         </div>
  
-       <div class="roadmap-container relative w-full lg:w-[1000px] flex_center max-lg:flex-col flex-wrap gap-[40px] lg:gap-[140px] text-[20px]">
+       <div class="roadmap-container relative w-full lg:w-[1000px] flex_center max-lg:flex-col flex-wrap gap-[20px] lg:gap-[140px] text-[20px]"> 
 
           <div class="roadmap relative flex_center" data-aos="zoom-in"
           data-aos-duration="800"
@@ -649,23 +563,131 @@ you’re probably holding the wrong coin.
          </div>
 
       </section>
+      
+      <section
+        id="hotomakesure"
+        class="hotomakesure flex_center flex-wrap max-lg:gap-7"
+      >
+ 
+         <div class="image flex_center flex-col h-full w-full lg:w-[50%]">
+            <h3 class="mb-4 text-[30px] max-lg:text-center w-[70%]">Hire SMIRK now to make sure the job is done to perfection.</h3>
+            <img src="./assets/images/token-image.jpg" alt="token" class="w-[70%] h-auto rounded-[20px]">
+        </div>
 
+        <div class="dropdown-container flex flex-col items-center gap-7 h-full w-full lg:w-[50%] max-lg:px-5">
+             
+          <div class="dropdown relative flex items-center flex-col  w-[90%] md:w-[450px] rounded-lg">
+  
+            <button class="btn rounded-[20px] w-full relative flex justify-center items-center h-[70px] cursor-pointer bg-white border-black border-[4px]">
+                
+                <p class="text-center font-semibold text-[22px] sm:text-[25px]">Who is Smirk</p>
 
-      <footer class="w-full flex_center relative h-[560px] lg:h-[500px]">
-           <div id="headerEffectCanvas" class="scene flex w-full h-full"></div>
+                <div class="arrow absolute left-5">
+                  <img src="https://www.svgrepo.com/download/108052/arrow-down-filled-triangle.svg" alt="arrow" class="w-4">
+                </div>
 
-           <div class="by absolute w-full top-0  h-[100px] z-10 flex_between flex-wrap text-center px-10 text-[20px] text-black">
-            <p class="max-sm:w-full">smirk@gmail.com</p>
-            
+            </button>
+
+            <div class="content w-full rounded-[30px] bg-white  ">
+              <p class="text-[22px]">Most of us degens are too caught up hunting for the "the next banger" to handle our women's needs, whether it’s emotional or... you know, the other stuff. That’s where SMirk comes in — perfect for the typical degen who’s always grinding and just doesnt have the time to put in the work</p>
+            </div>
+  
+
+          </div>
+             
+          <div class="dropdown relative flex items-center flex-col  w-[90%] md:w-[450px] rounded-lg">
+  
+            <button class="btn rounded-[20px] w-full relative flex justify-center items-center h-[70px] cursor-pointer bg-white border-black border-[4px]">
+                
+                <p class="text-center font-semibold text-[22px] sm:text-[25px]">Who is the team behind $SMIRK?</p>
+
+                <div class="arrow absolute left-5">
+                  <img src="https://www.svgrepo.com/download/108052/arrow-down-filled-triangle.svg" alt="arrow" class="w-4">
+                </div>
+
+            </button>
+
+            <div class="content w-full rounded-[30px] bg-white  ">
+              <p class="text-[22px]">The team behind $SMIRK consists of blockchain enthusiasts and meme culture lovers.</p>
+            </div>
+  
+
+          </div>
+             
+          <div class="dropdown relative flex items-center flex-col w-[90%] md:w-[450px] rounded-lg">
+  
+            <button class="btn rounded-[20px] w-full relative flex justify-center items-center h-[70px] cursor-pointer bg-white border-black border-[4px]">
+                
+                <p class="text-center font-semibold text-[22px] sm:text-[25px]">Where can I buy $SMIRK?</p>
+
+                <div class="arrow absolute left-5">
+                  <img src="https://www.svgrepo.com/download/108052/arrow-down-filled-triangle.svg" alt="arrow" class="w-4">
+                </div>
+
+            </button>
+
+            <div class="content w-full rounded-[30px] bg-white  ">
+              <p class="text-[22px]">You can buy $SMIRK on various decentralized exchanges and trading platforms.</p>
+            </div>
+  
+
+          </div>
+
+          </div>
+  
         
+      </section>
 
+      <footer class="w-full flex_center flex-wrap relative h-[560px] lg:h-[540px]">
+           <div id="headerEffectCanvas" class="scene flex w-full h-[85%]"></div>
+
+           <div class="by absolute w-full top-0 h-[100px] z-10 flex_between flex-wrap text-center px-10 text-[30px] text-black">
             <p class="max-sm:w-full">$SMIRK – join the blabla.</p>
-
+            <p class="max-sm:w-full">smirk@gmail.com</p> 
            </div>
 
-            <p class="absolute bottom-[10%]">© 2025 Smirk. All rights reserved.</p> 
+            <p class="absolute bottom-[20%] text-[20px]">© 2025 Smirk. All rights reserved.</p> 
+
+            <div class="text-slider-container relative z-0 w-full h-[15%] left-0 top-0">
+          <div class="slide-container footer_slide relative w-full h-full flex_center">
+            <div class="wrapper">
+                <div class="item item1">
+                  <h4>$SMIRK</h4>
+                </div> 
+                <div class="item item2" >
+                  <h4 style="animation-delay: .3s;">$SMIRK</h4>
+                </div> 
+                <div class="item item3">
+                  <h4>$SMIRK</h4>
+                </div> 
+                <div class="item item4"  >
+                  <h4 style="animation-delay: .3s;">$SMIRK</h4>
+                </div> 
+                <div class="item item5">
+                  <h4>$SMIRK</h4>
+                </div> 
+                <div class="item item6">
+                  <h4 style="animation-delay: .3s;">$SMIRK</h4>
+                </div> 
+                <div class="item item7">
+                  <h4>$SMIRK</h4>
+                </div> 
+                <div class="item item8">
+                  <h4 style="animation-delay: .3s;">$SMIRK</h4>
+                </div> 
+                <div class="item item9">
+                  <h4>$SMIRK</h4>
+                </div> 
+                <div class="item item10">
+                  <h4 style="animation-delay: .3s;">$SMIRK</h4>
+                </div>  
+            </div>
+          </div> 
+        </div>
            
       </footer>
+
+  
  
 
     </main>
