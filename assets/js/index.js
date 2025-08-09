@@ -1,8 +1,10 @@
 const loadingVideo = document.getElementById('loadingVideo');
+document.body.classList.add('loading');
 const loading = document.getElementById('loading');
 
 loadingVideo.addEventListener('ended', () => {
   loading.style.display = 'none';
+  document.body.classList.remove('loading');  
 
   AOS.init({ once: true });
 });

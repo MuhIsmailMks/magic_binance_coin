@@ -12,6 +12,10 @@ html{
   scroll-behavior: smooth;
 }
 
+body.loading{
+  overflow: hidden;
+}
+
 li{
   list-style: none;
 }
