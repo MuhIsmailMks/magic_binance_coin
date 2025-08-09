@@ -1,15 +1,13 @@
-// const loadingVideo = document.getElementById('loadingVideo');
-// const loading = document.getElementById('loading');
+const loadingVideo = document.getElementById('loadingVideo');
+const loading = document.getElementById('loading');
 
-// loadingVideo.addEventListener('ended', () => {
-//   loading.style.display = 'none';
-
-//   AOS.init({ once: true });
-// });
- 
-
+loadingVideo.addEventListener('ended', () => {
+  loading.style.display = 'none';
 
   AOS.init({ once: true });
+});
+ 
+ 
 // menu-button
 const menuButton = document.querySelector('.menu-button');
 const menuContainer = document.querySelector('.navbar nav');
