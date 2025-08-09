@@ -2,6 +2,7 @@ const loadingVideo = document.getElementById('loadingVideo');
 document.body.classList.add('loading');
 const loading = document.getElementById('loading');
 
+loadingVideo.playbackRate = 2.5;
 loadingVideo.addEventListener('ended', () => {
   loading.style.display = 'none';
   document.body.classList.remove('loading');  
@@ -85,7 +86,7 @@ changeFaceBtn.addEventListener('click', changeImage);
 
 
 // launch countdown 
-const launchDate = new Date("2025-12-08T12:00:00").getTime(); // Change date & time as needed 
+const launchDate = new Date("2025-08-15T09:00:00Z").getTime(); // Change date & time as needed 
 
 // ==== COUNTDOWN TIMER ====
 const countdown = setInterval(() => {
