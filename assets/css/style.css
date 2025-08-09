@@ -30,12 +30,21 @@ li{
   src: url("../fonts/ComicSansMS3.ttf") format("truetype"); 
 }
 
+@font-face {
+  font-family: "AvenirNextLTPro";
+  src: url("../fonts/AvenirNextLTPro-Bold.otf") format("truetype"); 
+}
+
 body {
   font-family: "ComicSansMS3", sans-serif; 
 }
  
 .loved-font{
   font-family: "loved", sans-serif;
+}
+
+.avenir_font{
+  font-family: "AvenirNextLTPro", sans-serif;
 }
 
 
@@ -264,7 +273,7 @@ section{
 }
 
 .boldShadow{
-  text-shadow: 0 .4vw  black;
+  text-shadow: 0 .4vw black;
 }
 
 .thinBoxShadow{

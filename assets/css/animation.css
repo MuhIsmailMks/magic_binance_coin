@@ -138,5 +138,27 @@
 
 
 
+/* media queries */
+@media screen and (max-width: 1024px) {
+  .slide-container {
+  width: 190%;
+}
+}
 
 
+
+.how-to-animation {
+  display: inline-block;  
+  animation: rotateShakeSubtle 3.2s ease-in-out infinite;
+  transform-origin: 50% 50%;
+}
+
+@keyframes rotateShakeSubtle {
+  0%   { transform: rotate(0deg); }
+  10%  { transform: rotate(-3deg); }
+  30%  { transform: rotate(2deg);  }
+  50%  { transform: rotate(-2deg); }
+  70%  { transform: rotate(1deg);  }
+  90%  { transform: rotate(-1deg); }
+  100% { transform: rotate(0deg); }
+}

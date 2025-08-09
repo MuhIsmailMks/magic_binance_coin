@@ -1,9 +1,15 @@
-window.addEventListener('DOMContentLoaded',() => {
-    AOS.init({
-    once: true
-    }); 
-})
+// const loadingVideo = document.getElementById('loadingVideo');
+// const loading = document.getElementById('loading');
 
+// loadingVideo.addEventListener('ended', () => {
+//   loading.style.display = 'none';
+
+//   AOS.init({ once: true });
+// });
+ 
+
+
+  AOS.init({ once: true });
 // menu-button
 const menuButton = document.querySelector('.menu-button');
 const menuContainer = document.querySelector('.navbar nav');
@@ -31,12 +37,12 @@ const changeFaceBtn = document.getElementById('changeFaceBtn');
 
 // Array gambar
 const images = [
-  './assets/images/smilingsmirk.jpeg', 
-  './assets/images/$SMIRKMAINIMAGE.png', 
+  './assets/images/smilingsmirk.jpeg',
+  './assets/images/$SMIRKMAINIMAGE.png',
   './assets/images/smirk7.jpeg',
   './assets/images/smirk6.jpeg',
   './assets/images/smirk8.jpeg',
-  './assets/images/smirk1.jpeg',  
+  './assets/images/smirk1.jpeg',
   './assets/images/smirk11.jpeg'
 ];
 
@@ -106,7 +112,7 @@ const copyTextEl = document.getElementById("copyText");
 const copyBtn = document.getElementById("copyBtn");
 
 function activateCA() {
-  const ca = "000000000000000000000000";  
+  const ca = "000000000000000000000000";
 
   // change CA in html text
   copyTextEl.textContent = ca;
@@ -138,4 +144,3 @@ slideContainers.forEach(container => {
     item.style.animationDelay = `${delay}s`;
   });
 });
- 

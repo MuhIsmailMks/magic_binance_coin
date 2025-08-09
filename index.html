@@ -33,10 +33,18 @@
     <title>SMIRK</title>
   </head>
   <body>
+
+    <!-- loading -->
+     <!-- <div id="loading" class="fixed h-full w-full left-0 top-0 z-[99999] bg-white flex_center">
+      <video id="loadingVideo" class="w-full xl:h-full xl:w-auto object-cover" autoplay muted playsinline>
+        <source src="./assets/video/loading.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+     </video>
+     </div> -->
     
     <!-- container page -->
     <main
-      class="w-full min-h-[100vh] h-auto max-w-[100%] relative overflow-hidden flex flex-col items-center gap-[70px]"
+      class="w-full min-h-[100vh] h-auto max-w-[100%] relative overflow-hidden flex flex-col items-center gap-[50px] md:gap-[70px]"
     >
      <div id="cursor" class="z-[9999]">
       <div class="cursor__circle"></div>
@@ -256,17 +264,19 @@
             data-aos-delay="300"
             >Power. Without saying a word.</span>
         
-          <div class="image-container w-[60%] lg:w-[50%] max-w-[1300px]">
+          <div class="image-container w-[70%] lg:w-[50%] max-w-[1300px]">
             <img src="./assets/images/smilingsmirk.jpeg" alt="3D Effect" class="border-black border-2 w-full">
           </div>
 
         
           <button id="changeFaceBtn" class="py-4 px-7 bg-black text-white rounded-lg">Change Face</button>
+
+           <h4 class="mediumStroke text-[18vw] lg:hidden">$SMIRK</h4>
          
         </div>
 
         <div class="text-slider-container absolute z-0 w-full h-full left-0 top-0">
-          <div class="slide-container left-[-25%] lg:left-[-20%] absolute top-[55%] py-3 lg:py-5 z-10 rotate-[40deg] lg:rotate-[20deg]">
+          <div class="slide-container left-[-35%] lg:left-[-20%] absolute top-[55%] lg:top-[55%] py-3 lg:py-5 z-10 rotate-[45deg] lg:rotate-[20deg]">
             <div class="wrapper">
                 <div class="item item1">
                   <h4>$SMIRK</h4>
@@ -300,7 +310,7 @@
                 </div>  
             </div>
           </div>
-          <div class="slide-container rightSlider left-[-25%] lg:left-[-20%]  absolute top-[50%] py-3 lg:py-5 z-10 rotate-[-40deg] lg:rotate-[-20deg]">
+          <div class="slide-container rightSlider left-[-35%] lg:left-[-20%] absolute top-[40%] lg:top-[50%] py-3 lg:py-5 z-10 rotate-[-45deg] lg:rotate-[-20deg]">
             <div class="wrapper">
                 <div class="item item1">
                   <h4>$SMIRK</h4>
@@ -342,10 +352,10 @@
       <section id="launch" class="launch flex items-center flex-col gap-7 mt-[80px]">
      
         <div
-          class="title-font relative w-auto h-auto py-[40px] lg:py-[60px] px-[30px] lg:px-[5vw] pt-[3vw] lg:pt-[1vw]"
+          class="avenir_font relative w-auto h-auto py-[40px] lg:py-[60px] px-[30px] lg:px-[5vw] pt-[3vw] lg:pt-[1vw]"
         >
           <h2
-            class="mediumStroke text-white text-[15vw] lg:text-[7vw] boldShadow text-center leading-[1]" 
+            class="mediumStroke text-white text-[15vw] lg:text-[6vw] boldShadow text-center leading-[1]" 
           data-aos="fade-up"
           data-aos-duration="900"
           data-aos-delay="100"
@@ -360,7 +370,7 @@
           data-aos-delay="400"></canvas>
 
         <div class="launch-section">
-          <h2 class="loved-font text-center text-[30px] xl:text-[3vw]" 
+          <h2 class="avenir_font text-center text-[30px] xl:text-[3vw]" 
           data-aos="fade-up"
           data-aos-duration="900"
           data-aos-delay="100"> Launch Countdown</h2>
@@ -404,34 +414,29 @@
 
       <section
         id="howtobuy"
-        class="hoToBuy mt-7 lg:mt-[2vw] flex_center flex-col"
+        class="hoToBuy mt-7 lg:mt-[2vw] flex_center gap-10 flex-col"
       >
         <div
-          class="title-font relative w-auto h-auto py-[40px] lg:py-[60px] px-[30px] lg:px-[5vw] pt-[3vw] lg:pt-[1vw]"
+          class="avenir_font relative w-auto h-auto   px-[30px] lg:px-[5vw]  "
           data-aos="fade-up"
           data-aos-duration="900"
           data-aos-delay="100"
         >
           <h2
-            class="mediumStroke text-white text-[16vw] lg:text-[10vw] boldShadow text-center leading-[1]"
+            class="mediumStroke text-white text-[16vw] lg:text-[7vw] boldShadow text-center leading-[1]"
           >
             How to buy
           </h2>
         </div>
 
-
-        <div class="how-to-buy-container relative w-[90%] xl:w-[60%] flex_center flex-col gap-6">
-          <div class="how-to-buy flex_center flex-wrap relative w-full md:h-[250px]"  data-aos="zoom-in"
+        <div class="video w-[90%] md:w-[70%]">
+          <div class="how-to-buy flex_center flex-wrap relative w-full h-auto "  data-aos="zoom-in"
             data-aos-duration="900"
             data-aos-delay="400">
-            <div class="image w-full md:w-[30%] md:h-full">
-               <img src="./assets/images/smirk5.jpeg" alt="SMIRK" class="w-full h-full object-cover">
-            </div>
-            <div class="content w-[90%] md:w-[70%] md:h-full p-4">
-              <h3 class="text-[30px]">STEP 1</h3>
 
-              <p class="mt-4 text-[20px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, obcaecati. Consequatur molestias quis mollitia impedit in nihil ipsam aut facere, aliquid, perferendis placeat magnam possimus ratione, accusantium eveniet iusto consequuntur!</p>
-            </div>
+            <video autoplay muted loop playsinline class="w-full">
+                <source src="./assets/video/howtobuuy.mp4" type="video/mp4">
+            </video>
 
             <div class="border-container w-full h-full absolute left-0 top-0">
               <img src="./assets/images/border-top.svg" alt="" class="w-full absolute object-cover top-0 left-0">
@@ -442,68 +447,92 @@
             </div>
 
           </div>
-          <div class="how-to-buy flex_center flex-wrap relative w-full md:h-[250px]" data-aos="zoom-in"
-            data-aos-duration="900"
-            data-aos-delay="500">
-            <div class="image w-full md:w-[30%] md:h-full">
-               <img src="./assets/images/smirk7.jpeg" alt="SMIRK" class="w-full h-full object-cover">
-            </div>
-            <div class="content w-[90%] md:w-[70%] md:h-full p-4">
-              <h3 class="text-[30px]">STEP 2</h3>
+        </div>
 
-              <p class="mt-4 text-[20px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, obcaecati. Consequatur molestias quis mollitia impedit in nihil ipsam aut facere, aliquid, perferendis placeat magnam possimus ratione, accusantium eveniet iusto consequuntur!</p>
-            </div>
 
-            <div class="border-container w-full h-full absolute left-0 top-0">
-              <img src="./assets/images/border-top.svg" alt="" class="w-full absolute object-cover top-0 left-0">
-              <img src="./assets/images/border-top.svg" alt="" class="w-full absolute object-cover bottom-0 left-0">
+        <div class="how-to-buy-container relative w-full flex_center flex-wrap" data-aos="fade-up"
+        data-aos-duration="900"
+        data-aos-delay="1000">
 
-              <img src="./assets/images/border-right.svg" alt="" class="h-full absolute object-cover bottom-0 left-0">
-              <img src="./assets/images/border-right.svg" alt="" class="h-full absolute object-cover bottom-0 right-0">
-            </div>
+          <div class="how-to-buy flex_center relative w-[90%] md:w-[65%] lg:w-[45%] xl:w-[31%] max-w-[500px]">
+            
+            <!-- bg -->
+            <img src="./assets/images/how-to-buy-bg.svg" alt="how to buy" class="w-full how-to-animation">
+
+             <div class="w-full h-full absolute top-0 left-0 how-to-animation">
+
+            <!-- content -->
+             <div class="absolute w-full h-full  text-black">
+              <h3 class="step absolute avenir_font left-[12%] top-[15%] md:top-[18%] rotate-[-20deg] text-[30px] font-semibold">STEP 1</h3>
+
+              <p class="absolute w-[70%] right-[10%] text-[18px] leading-[1.9] top-[35%]">
+                Download a trusted wallet like MetaMask or Trust Wallet on your phone or browser. Set it up, secure your seed phrase, and make sure you’re on the right network.
+              </p>
+             </div>
+             </div>
+
           </div>
-          <div class="how-to-buy flex_center flex-wrap relative w-full md:h-[250px]" data-aos="zoom-in"
-            data-aos-duration="900"
-            data-aos-delay="600">
-            <div class="image w-full md:w-[30%] md:h-full">
-               <img src="./assets/images/smirk4.jpeg" alt="SMIRK" class="w-full h-full object-cover">
-            </div>
-            <div class="content w-[90%] md:w-[70%] md:h-full p-4">
-              <h3 class="text-[30px]">STEP 3</h3>
 
-              <p class="mt-4 text-[20px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, obcaecati. Consequatur molestias quis mollitia impedit in nihil ipsam aut facere, aliquid, perferendis placeat magnam possimus ratione, accusantium eveniet iusto consequuntur!</p>
-            </div>
+          <div class="how-to-buy flex_center relative w-[90%] md:w-[65%] lg:w-[45%] xl:w-[31%] max-w-[500px]">
+            
+            <!-- bg -->
+            <img src="./assets/images/how-to-buy-bg.svg" alt="how to buy" class="w-full how-to-animation">
 
-            <div class="border-container w-full h-full absolute left-0 top-0">
-              <img src="./assets/images/border-top.svg" alt="" class="w-full absolute object-cover top-0 left-0">
-              <img src="./assets/images/border-top.svg" alt="" class="w-full absolute object-cover bottom-0 left-0">
+             <div class="w-full h-full absolute top-0 left-0 how-to-animation">
 
-              <img src="./assets/images/border-right.svg" alt="" class="h-full absolute object-cover bottom-0 left-0">
-              <img src="./assets/images/border-right.svg" alt="" class="h-full absolute object-cover bottom-0 right-0">
-            </div>
+            <!-- content -->
+             <div class="absolute w-full h-full  text-black">
+              <h3 class="step absolute avenir_font left-[12%] top-[15%] md:top-[18%] rotate-[-20deg] text-[30px] font-semibold">STEP 2</h3>
+
+              <p class="absolute w-[70%] right-[10%] text-[18px] leading-[1.5] top-[35%]">
+               Use your wallet’s built-in buy feature or an exchange like Binance or Coinbase to purchase BNB (for BSC network) or ETH (for Ethereum network). Then, transfer it to your wallet.
+              </p>
+             </div>
+             </div>
+
           </div>
+
+          <div class="how-to-buy flex_center relative w-[90%] md:w-[65%] lg:w-[45%] xl:w-[31%] max-w-[500px]">
+            
+            <!-- bg -->
+            <img src="./assets/images/how-to-buy-bg.svg" alt="how to buy" class="w-full how-to-animation">
+
+             <div class="w-full h-full absolute top-0 left-0 how-to-animation">
+
+            <!-- content -->
+             <div class="absolute w-full h-full  text-black">
+              <h3 class="step absolute avenir_font left-[12%] top-[15%] md:top-[18%] rotate-[-20deg] text-[30px] font-semibold">STEP 3</h3>
+
+              <p class="absolute w-[70%] right-[10%] text-[18px] leading-[1.9] top-[35%]">
+                 Go to PancakeSwap (for BSC) or Uniswap (for Ethereum), connect your wallet, and paste the official $SMIRK contract address. 
+              </p>
+             </div>
+             </div>
+
+          </div>
+  
         </div>
   
       </section>
 
       <section
         id="smirknomics"
-        class="smirknomics  max-lg:mt-[50px] mt-[10vw] flex_center flex-col"
+        class="smirknomics max-lg:mt-[50px] mt-[10vw] flex_center flex-col"
       >
         <div
-          class="title-font relative w-auto h-auto py-[40px] lg:py-[60px] px-[30px] lg:px-[5vw] pt-[3vw] lg:pt-[1vw]"
+          class="avenir_font relative w-auto h-auto py-[40px] lg:py-[60px] px-[30px] lg:px-[5vw] pt-[3vw] lg:pt-[1vw]"
           data-aos="fade-up"
           data-aos-duration="900"
           data-aos-delay="100"
         >
           <h2
-            class="mediumStroke text-white text-[17vw] lg:text-[10vw] boldShadow text-center leading-[1]"
+            class="mediumStroke text-white text-[11vw] lg:text-[100px] boldShadow text-center leading-[1]"
           >
             Smirknomics 
           </h2>
         </div>
  
-         <div class="token-container paper-animation relative w-full lg:w-[60%] flex_center">
+         <div class="token-container paper-animation relative w-full lg:w-[60%] max-w-[900px] flex_center">
           <div class="bg w-full relative">
             <img src="./assets/images/token-paper.svg" alt="tokenpaper" class="w-full h-auto">
           </div>
@@ -545,13 +574,13 @@
         class="roadmap max-lg:mt-[50px] mt-[10vw] flex_center flex-col"
       >
         <div
-          class="title-font relative w-auto h-auto py-[40px] lg:py-[60px] px-[30px] lg:px-[5vw] pt-[3vw] lg:pt-[1vw]"
+          class="avenir_font relative w-auto h-auto py-[40px] lg:py-[60px] px-[30px] lg:px-[5vw] pt-[3vw] lg:pt-[1vw]"
           data-aos="fade-up"
           data-aos-duration="900"
           data-aos-delay="100"
         >
           <h2
-            class="mediumStroke text-white text-[12vw] lg:text-[10vw] boldShadow text-center leading-[1]"
+            class="mediumStroke text-white text-[12vw] lg:text-[100px] boldShadow text-center leading-[1]"
           >
              funny + anti-roadmap approach 
           </h2>
