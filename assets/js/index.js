@@ -1,17 +1,17 @@
-const loadingVideo = document.getElementById('loadingVideo');
-document.body.classList.add('loading');
-const loading = document.getElementById('loading');
+// const loadingVideo = document.getElementById('loadingVideo');
+// document.body.classList.add('loading');
+// const loading = document.getElementById('loading');
 
-loadingVideo.playbackRate = 2.5;
-loadingVideo.addEventListener('ended', () => {
-  loading.style.display = 'none';
-  document.body.classList.remove('loading');  
+// loadingVideo.playbackRate = 2.5;
+// loadingVideo.addEventListener('ended', () => {
+//   loading.style.display = 'none';
+//   document.body.classList.remove('loading');  
+
+//   AOS.init({ once: true });
+// });
+
 
   AOS.init({ once: true });
-});
-
-
-  // AOS.init({ once: true });
  
  
 // menu-button
