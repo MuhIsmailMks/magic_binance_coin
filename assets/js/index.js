@@ -21,60 +21,9 @@ socialLinks.forEach(socialLink => {
   })
 })
 
-
-// image change face
-// const container = document.querySelector('.image-container');
-// const img = container.querySelector('img');
-// const changeFaceBtn = document.getElementById('changeFaceBtn');
-
-// // Array gambar
-// const images = [
-//   './assets/images/smilingsmirk.jpeg',
-//   './assets/images/$SMIRKMAINIMAGE.png',
-//   './assets/images/smirk7.jpeg',
-//   './assets/images/smirk6.jpeg',
-//   './assets/images/smirk8.jpeg',
-//   './assets/images/smirk1.jpeg',
-//   './assets/images/smirk11.jpeg'
-// ];
-
-// function changeImage() {
-//   let randomImage;
-//   do {
-//     randomImage = images[Math.floor(Math.random() * images.length)];
-//   } while (randomImage === img.src.split('/').pop());  
-
-//   img.src = randomImage;
-// }
-
-// Rotasi 3D saat mouse bergerak
-// container.addEventListener('mousemove', (e) => {
-//   const rect = container.getBoundingClientRect();
-//   const x = e.clientX - rect.left;
-//   const y = e.clientY - rect.top;
-
-//   const centerX = rect.width / 2;
-//   const centerY = rect.height / 2;
-
-//   const rotateX = ((y - centerY) / centerY) * 10;
-//   const rotateY = ((x - centerX) / centerX) * 10;
-
-//   img.style.transform = `rotateX(${-rotateX}deg) rotateY(${rotateY}deg)`;
-// });
-
-// container.addEventListener('mouseleave', () => {
-//   img.style.transform = `rotateX(0) rotateY(0)`;
-// });
-
-// // Click the button → change
-// container.addEventListener('click', changeImage);
-
-// // Click the button → change
-// changeFaceBtn.addEventListener('click', changeImage);
-
-
+ 
 // launch countdown 
-const launchDate = new Date("2025-08-15T09:00:00Z").getTime(); // Change date & time as needed 
+const launchDate = new Date("2025-08-15T21:00:00Z").getTime() + (7 * 60 * 60 * 1000);; // Change date & time as needed 
 
 // ==== COUNTDOWN TIMER ====
 const countdown = setInterval(() => {
