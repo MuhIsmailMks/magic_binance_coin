@@ -23,7 +23,7 @@ socialLinks.forEach(socialLink => {
 
  
 // launch countdown 
-const launchDate = new Date("2025-08-15T21:00:00Z").getTime() + (7 * 60 * 60 * 1000);; // Change date & time as needed 
+const launchDate = new Date("2025-08-15T20:05:00Z").getTime()  // Change date & time as needed 
 
 // ==== COUNTDOWN TIMER ====
 const countdown = setInterval(() => {
@@ -53,7 +53,7 @@ const copyTextEl = document.getElementById("copyText");
 const copyBtn = document.getElementById("copyBtn");
 
 function activateCA() {
-  const ca = "000000000000000000000000";
+  const ca = "6TkVf6BpQs562KS4qyfgqT6Q31NiTHp8TF2PSRsFpump";
 
   // change CA in html text
   copyTextEl.textContent = ca;
